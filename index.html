@@ -54,33 +54,15 @@
         .logo-image {
             width: 60px;
             height: 60px;
-            background: #0f3b5f;
-            border-radius: 12px;
             display: flex;
             align-items: center;
             justify-content: center;
-            position: relative;
-            overflow: hidden;
         }
 
-        .logo-image::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(135deg, #0f3b5f, #1a5a7d);
-            border-radius: 12px;
-        }
-
-        .logo-text {
-            position: relative;
-            z-index: 2;
-            font-size: 24px;
-            font-weight: 800;
-            color: #f0ebdc;
-            letter-spacing: -1px;
+        .logo-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
         }
 
         .logo-brand {
@@ -458,10 +440,6 @@
                 width: 50px;
                 height: 50px;
             }
-
-            .logo-text {
-                font-size: 20px;
-            }
         }
 
         @media (max-width: 480px) {
@@ -476,10 +454,6 @@
             .logo-image {
                 width: 45px;
                 height: 45px;
-            }
-
-            .logo-text {
-                font-size: 18px;
             }
 
             .cta-button {
@@ -529,7 +503,7 @@
             <div class="header-content">
                 <div class="logo">
                     <div class="logo-image">
-                        <div class="logo-text">SA</div>
+                        <img src="https://i.imgur.com/9KX8Z7Q.png" alt="Sultana Analytics Logo">
                     </div>
                     <div>
                         <div class="logo-brand">Sultana Analytics</div>
@@ -546,9 +520,8 @@
             <h1>Soluciones Integrales de Datos</h1>
             <div class="tec-badge">Colaborador del Tecnológico de Monterrey</div>
             <p class="hero-subtitle">
-               Data Specialist en PYMES.
-                Desde la recolección,
-                limpieza de datos e ingenieria, hasta análisis avanzados y ciencia de datos, te ayudo 
+                Full-Stack Data Engineer especializado en PYMES. Desde la arquitectura y 
+                recolección de datos hasta análisis avanzados y ciencia de datos, te ayudo 
                 a construir una infraestructura de datos completa para impulsar tu negocio.
             </p>
             <button class="cta-button" onclick="openModal()">
@@ -564,7 +537,7 @@
             <section class="services">
                 <h2>¿Qué Ofrezco?</h2>
                 <p class="service-description">
-                    Como Data Specialist con respaldo del Tecnológico de Monterrey, 
+                    Como Full-Stack Data Engineer con respaldo del Tecnológico de Monterrey, 
                     ofrezco soluciones completas de datos: desde la ingeniería y arquitectura 
                     hasta análisis avanzados y ciencia de datos, todo enfocado en las necesidades 
                     de pequeñas y medianas empresas.
@@ -576,8 +549,8 @@
                         <h3>Ingeniería de Datos</h3>
                         <p class="service-description">
                             Diseño e implemento pipelines de datos robustos, automatizo procesos 
-                            de extracción, y construyo arquitecturas escalables que transforman datos 
-                            crudos en información lista para análisis de tu negocio.
+                            de ETL/ELT, y construyo arquitecturas escalables que transforman datos 
+                            crudos en información lista para análisis.
                         </p>
                     </div>
                     
@@ -611,7 +584,7 @@
                 <div class="contact-info">
                     <div class="contact-item">
                         <h3>📧 Email</h3>
-                        <a href="mailto:alexgamboa1706@gmail.com">alexgamboa1706@gmail.com</a>
+                        <a href="mailto:contacto@sultanaanalytics.com">contacto@sultanaanalytics.com</a>
                     </div>
                     
                     <div class="contact-item">
