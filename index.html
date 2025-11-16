@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AnalizaLex - Análisis de Datos para PYMES</title>
+    <title>Sultana Analytics - Soluciones de Datos para PYMES</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         /* Reset y configuración base */
@@ -16,8 +16,8 @@
         body {
             font-family: 'Inter', system-ui, -apple-system, sans-serif;
             line-height: 1.6;
-            color: #2c3e50;
-            background: linear-gradient(135deg, #e34358 0%, #ecab9c 100%);
+            color: #1a3a52;
+            background: linear-gradient(135deg, #0f3b5f 0%, #1a5a7d 100%);
             min-height: 100vh;
         }
 
@@ -30,9 +30,9 @@
 
         /* Header */
         header {
-            background: rgba(244, 249, 207, 0.95);
+            background: rgba(240, 235, 220, 0.98);
             backdrop-filter: blur(10px);
-            box-shadow: 0 2px 20px rgba(227, 67, 88, 0.1);
+            box-shadow: 0 2px 20px rgba(15, 59, 95, 0.2);
             position: sticky;
             top: 0;
             z-index: 100;
@@ -54,7 +54,7 @@
         .logo-image {
             width: 60px;
             height: 60px;
-            background: #e34358;
+            background: #0f3b5f;
             border-radius: 12px;
             display: flex;
             align-items: center;
@@ -70,7 +70,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(135deg, #e34358, #ecab9c);
+            background: linear-gradient(135deg, #0f3b5f, #1a5a7d);
             border-radius: 12px;
         }
 
@@ -79,14 +79,14 @@
             z-index: 2;
             font-size: 24px;
             font-weight: 800;
-            color: #f4f9cf;
+            color: #f0ebdc;
             letter-spacing: -1px;
         }
 
         .logo-brand {
             font-size: 2rem;
             font-weight: 700;
-            background: linear-gradient(135deg, #e34358, #ecab9c);
+            background: linear-gradient(135deg, #0f3b5f, #1a5a7d);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -95,7 +95,7 @@
 
         .logo-tagline {
             font-size: 0.9rem;
-            color: #e34358;
+            color: #0f3b5f;
             font-weight: 500;
             margin-top: -5px;
             letter-spacing: 0.5px;
@@ -118,19 +118,37 @@
 
         .hero-subtitle {
             font-size: 1.3rem;
-            margin-bottom: 2rem;
+            margin-bottom: 1rem;
             opacity: 0.95;
-            max-width: 600px;
+            max-width: 700px;
             margin-left: auto;
             margin-right: auto;
             font-weight: 400;
             line-height: 1.7;
         }
 
+        .tec-badge {
+            display: inline-block;
+            background: rgba(240, 235, 220, 0.15);
+            backdrop-filter: blur(10px);
+            padding: 12px 25px;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            border: 2px solid rgba(240, 235, 220, 0.3);
+            color: #f0ebdc;
+        }
+
+        .tec-badge::before {
+            content: "🎓 ";
+            font-size: 1.2rem;
+        }
+
         /* Botón principal */
         .cta-button {
             display: inline-block;
-            background: linear-gradient(45deg, #e34358, #ecab9c);
+            background: linear-gradient(45deg, #0f3b5f, #1a5a7d);
             color: white;
             padding: 18px 45px;
             border: none;
@@ -140,7 +158,7 @@
             cursor: pointer;
             text-decoration: none;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 20px rgba(227, 67, 88, 0.3);
+            box-shadow: 0 4px 20px rgba(15, 59, 95, 0.4);
             text-transform: uppercase;
             letter-spacing: 1px;
             font-family: 'Inter', sans-serif;
@@ -148,16 +166,16 @@
 
         .cta-button:hover {
             transform: translateY(-3px);
-            box-shadow: 0 8px 30px rgba(227, 67, 88, 0.4);
-            background: linear-gradient(45deg, #ecab9c, #e34358);
+            box-shadow: 0 8px 30px rgba(15, 59, 95, 0.5);
+            background: linear-gradient(45deg, #1a5a7d, #0f3b5f);
         }
 
         /* Sección principal de contenido */
         .main-content {
-            background: #f4f9cf;
+            background: #f0ebdc;
             margin: 2rem 0;
             border-radius: 24px;
-            box-shadow: 0 10px 40px rgba(227, 67, 88, 0.1);
+            box-shadow: 0 10px 40px rgba(15, 59, 95, 0.2);
             overflow: hidden;
         }
 
@@ -170,7 +188,7 @@
         .services h2 {
             font-size: 2.5rem;
             margin-bottom: 2rem;
-            color: #e34358;
+            color: #0f3b5f;
             font-weight: 700;
             letter-spacing: -1px;
         }
@@ -183,30 +201,30 @@
         }
 
         .service-card {
-            background: linear-gradient(135deg, #f1dfbe, #efc5ad);
+            background: linear-gradient(135deg, #ffffff, #f5f1e8);
             padding: 2.5rem;
             border-radius: 20px;
-            box-shadow: 0 8px 25px rgba(227, 67, 88, 0.1);
+            box-shadow: 0 8px 25px rgba(15, 59, 95, 0.1);
             transition: all 0.3s ease;
-            border: 1px solid rgba(227, 67, 88, 0.1);
+            border: 1px solid rgba(15, 59, 95, 0.1);
         }
 
         .service-card:hover {
             transform: translateY(-8px);
-            box-shadow: 0 15px 35px rgba(227, 67, 88, 0.2);
+            box-shadow: 0 15px 35px rgba(15, 59, 95, 0.2);
         }
 
         .service-icon {
             font-size: 3.5rem;
             margin-bottom: 1.5rem;
-            color: #e34358;
-            filter: drop-shadow(0 2px 4px rgba(227, 67, 88, 0.2));
+            color: #0f3b5f;
+            filter: drop-shadow(0 2px 4px rgba(15, 59, 95, 0.2));
         }
 
         .service-card h3 {
             font-size: 1.6rem;
             margin-bottom: 1rem;
-            color: #e34358;
+            color: #0f3b5f;
             font-weight: 600;
         }
 
@@ -219,7 +237,7 @@
 
         /* Sección de contacto */
         .contact {
-            background: linear-gradient(135deg, #e34358, #ecab9c);
+            background: linear-gradient(135deg, #0f3b5f, #1a5a7d);
             color: white;
             padding: 4rem 2rem;
             text-align: center;
@@ -240,21 +258,21 @@
         }
 
         .contact-item {
-            background: rgba(244, 249, 207, 0.15);
+            background: rgba(240, 235, 220, 0.15);
             padding: 2rem;
             border-radius: 16px;
             backdrop-filter: blur(10px);
-            border: 1px solid rgba(244, 249, 207, 0.2);
+            border: 1px solid rgba(240, 235, 220, 0.2);
         }
 
         .contact-item h3 {
             margin-bottom: 0.8rem;
-            color: #f4f9cf;
+            color: #f0ebdc;
             font-weight: 600;
         }
 
         .contact-item a {
-            color: #f4f9cf;
+            color: #f0ebdc;
             text-decoration: none;
             font-weight: 500;
             transition: color 0.3s ease;
@@ -273,7 +291,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(227, 67, 88, 0.8);
+            background: rgba(15, 59, 95, 0.85);
             z-index: 1000;
             opacity: 0;
             transition: opacity 0.3s ease;
@@ -288,12 +306,12 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%) scale(0.7);
-            background: #f4f9cf;
+            background: #f0ebdc;
             padding: 2.5rem;
             border-radius: 24px;
             width: 90%;
             max-width: 520px;
-            box-shadow: 0 20px 60px rgba(227, 67, 88, 0.3);
+            box-shadow: 0 20px 60px rgba(15, 59, 95, 0.3);
             transition: transform 0.3s ease;
         }
 
@@ -310,7 +328,7 @@
 
         .modal-header h3 {
             font-size: 1.8rem;
-            color: #e34358;
+            color: #0f3b5f;
             font-weight: 700;
         }
 
@@ -319,12 +337,12 @@
             border: none;
             font-size: 2rem;
             cursor: pointer;
-            color: #ecab9c;
+            color: #1a5a7d;
             transition: color 0.3s ease;
         }
 
         .close-modal:hover {
-            color: #e34358;
+            color: #0f3b5f;
         }
 
         /* Formulario */
@@ -336,14 +354,14 @@
             display: block;
             margin-bottom: 0.8rem;
             font-weight: 600;
-            color: #e34358;
+            color: #0f3b5f;
         }
 
         .form-group input,
         .form-group textarea {
             width: 100%;
             padding: 15px;
-            border: 2px solid #efc5ad;
+            border: 2px solid #d4cdb8;
             border-radius: 12px;
             font-size: 1rem;
             transition: all 0.3s ease;
@@ -358,18 +376,18 @@
         .form-group input:focus,
         .form-group textarea:focus {
             outline: none;
-            border-color: #e34358;
-            box-shadow: 0 0 15px rgba(227, 67, 88, 0.2);
+            border-color: #0f3b5f;
+            box-shadow: 0 0 15px rgba(15, 59, 95, 0.2);
         }
 
         .form-group input.error,
         .form-group textarea.error {
-            border-color: #e34358;
-            box-shadow: 0 0 15px rgba(227, 67, 88, 0.3);
+            border-color: #0f3b5f;
+            box-shadow: 0 0 15px rgba(15, 59, 95, 0.3);
         }
 
         .error-message {
-            color: #e34358;
+            color: #0f3b5f;
             font-size: 0.9rem;
             margin-top: 0.5rem;
             display: none;
@@ -378,7 +396,7 @@
 
         .submit-button {
             width: 100%;
-            background: linear-gradient(45deg, #e34358, #ecab9c);
+            background: linear-gradient(45deg, #0f3b5f, #1a5a7d);
             color: white;
             padding: 18px;
             border: none;
@@ -392,7 +410,7 @@
 
         .submit-button:hover {
             transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(227, 67, 88, 0.3);
+            box-shadow: 0 8px 20px rgba(15, 59, 95, 0.3);
         }
 
         .submit-button:disabled {
@@ -403,8 +421,8 @@
 
         /* Footer */
         footer {
-            background: #e34358;
-            color: #f4f9cf;
+            background: #0f3b5f;
+            color: #f0ebdc;
             text-align: center;
             padding: 2.5rem 0;
         }
@@ -511,10 +529,10 @@
             <div class="header-content">
                 <div class="logo">
                     <div class="logo-image">
-                        <div class="logo-text">AL</div>
+                        <div class="logo-text">SA</div>
                     </div>
                     <div>
-                        <div class="logo-brand">AnalizaLex</div>
+                        <div class="logo-brand">Sultana Analytics</div>
                         <div class="logo-tagline">Analiza. Decide. Crece.</div>
                     </div>
                 </div>
@@ -525,13 +543,15 @@
     <!-- Sección Hero -->
     <section class="hero">
         <div class="container">
-            <h1>Transforma Datos en Decisiones</h1>
+            <h1>Soluciones Integrales de Datos</h1>
+            <div class="tec-badge">Colaborador del Tecnológico de Monterrey</div>
             <p class="hero-subtitle">
-                Especialista en análisis de datos para PYMES. Te ayudo a entender tus números 
-                y tomar decisiones más inteligentes para hacer crecer tu negocio.
+                Full-Stack Data Engineer especializado en PYMES. Desde la arquitectura y 
+                recolección de datos hasta análisis avanzados y ciencia de datos, te ayudo 
+                a construir una infraestructura de datos completa para impulsar tu negocio.
             </p>
             <button class="cta-button" onclick="openModal()">
-                📞 Solicitar Asesoría
+                📞 Solicitar Consultoría
             </button>
         </div>
     </section>
@@ -543,39 +563,40 @@
             <section class="services">
                 <h2>¿Qué Ofrezco?</h2>
                 <p class="service-description">
-                    Como analista de datos especializado en pequeñas y medianas empresas, 
-                    te ayudo a convertir la información de tu negocio en insights accionables 
-                    que impulsen tu crecimiento y rentabilidad.
+                    Como Full-Stack Data Engineer con respaldo del Tecnológico de Monterrey, 
+                    ofrezco soluciones completas de datos: desde la ingeniería y arquitectura 
+                    hasta análisis avanzados y ciencia de datos, todo enfocado en las necesidades 
+                    de pequeñas y medianas empresas.
                 </p>
                 
                 <div class="services-content">
                     <div class="service-card">
+                        <div class="service-icon">🔧</div>
+                        <h3>Ingeniería de Datos</h3>
+                        <p class="service-description">
+                            Diseño e implemento pipelines de datos robustos, automatizo procesos 
+                            de ETL/ELT, y construyo arquitecturas escalables que transforman datos 
+                            crudos en información lista para análisis.
+                        </p>
+                    </div>
+                    
+                    <div class="service-card">
                         <div class="service-icon">📊</div>
-                        <h3>Análisis de Datos</h3>
+                        <h3>Análisis & Visualización</h3>
                         <p class="service-description">
-                            Analizo tus datos de ventas, clientes y operaciones para identificar 
-                            patrones, tendencias y oportunidades de mejora que te ayuden a 
-                            optimizar tu negocio.
+                            Analizo datos de ventas, clientes y operaciones para identificar patrones 
+                            clave. Creo dashboards interactivos y reportes automatizados que facilitan 
+                            la toma de decisiones estratégicas.
                         </p>
                     </div>
                     
                     <div class="service-card">
-                        <div class="service-icon">📈</div>
-                        <h3>Visualización de Datos</h3>
+                        <div class="service-icon">🧠</div>
+                        <h3>Ciencia de Datos & IA</h3>
                         <p class="service-description">
-                            Creo dashboards y gráficos intuitivos que te permiten entender 
-                            rápidamente el desempeño de tu empresa y compartir resultados 
-                            con tu equipo de manera clara.
-                        </p>
-                    </div>
-                    
-                    <div class="service-card">
-                        <div class="service-icon">🎯</div>
-                        <h3>Consultoría Estratégica</h3>
-                        <p class="service-description">
-                            Te acompaño en la implementación de soluciones basadas en datos, 
-                            desde la definición de KPIs hasta la creación de reportes 
-                            automáticos para tu negocio.
+                            Desarrollo modelos predictivos, algoritmos de machine learning y soluciones 
+                            de inteligencia artificial aplicada para optimizar procesos, predecir 
+                            tendencias y automatizar decisiones en tu negocio.
                         </p>
                     </div>
                 </div>
@@ -583,13 +604,13 @@
 
             <!-- Sección de Contacto -->
             <section class="contact">
-                <h2>¡Hablemos de tu Proyecto!</h2>
-                <p>¿Listo para tomar decisiones más inteligentes con tus datos?</p>
+                <h2>¡Construyamos tu Infraestructura de Datos!</h2>
+                <p>¿Listo para transformar tus datos en tu activo más valioso?</p>
                 
                 <div class="contact-info">
                     <div class="contact-item">
                         <h3>📧 Email</h3>
-                        <a href="mailto:contacto@101analizalex.com">contacto@101analizalex.com</a>
+                        <a href="mailto:contacto@sultanaanalytics.com">contacto@sultanaanalytics.com</a>
                     </div>
                     
                     <div class="contact-item">
@@ -612,7 +633,7 @@
     <div class="modal" id="consultationModal">
         <div class="modal-content">
             <div class="modal-header">
-                <h3>Solicitar Asesoría</h3>
+                <h3>Solicitar Consultoría</h3>
                 <button class="close-modal" onclick="closeModal()">&times;</button>
             </div>
             
@@ -644,9 +665,9 @@
                 <div class="form-group">
                     <label for="message">Mensaje *</label>
                     <textarea id="message" name="message" required rows="4" 
-                              placeholder="Ej: Me interesan sus servicios para conocer mis ventas, analizar el comportamiento de mis clientes, etc."></textarea>
+                              placeholder="Ej: Necesito ayuda con arquitectura de datos, implementación de pipelines ETL, análisis predictivo, etc."></textarea>
                     <div class="error-message" id="messageError">
-                        Por favor describe qué tipo de análisis necesitas
+                        Por favor describe qué tipo de solución necesitas
                     </div>
                 </div>
                 
@@ -660,7 +681,8 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2025 AnalizaLex. Transformando datos en decisiones inteligentes.</p>
+            <p>&copy; 2025 Sultana Analytics. Soluciones integrales de datos para empresas que crecen.</p>
+            <p style="margin-top: 0.5rem; font-size: 0.9rem; opacity: 0.9;">Colaborador del Tecnológico de Monterrey</p>
         </div>
     </footer>
 
@@ -672,12 +694,9 @@
         // Función para abrir el modal
         function openModal() {
             modal.style.display = 'block';
-            // Pequeño delay para permitir que el display se aplique antes de la animación
             setTimeout(() => {
                 modal.classList.add('show');
             }, 10);
-            
-            // Bloquear scroll del body
             document.body.style.overflow = 'hidden';
         }
 
@@ -687,7 +706,6 @@
             setTimeout(() => {
                 modal.style.display = 'none';
                 document.body.style.overflow = 'auto';
-                // Limpiar errores al cerrar
                 clearAllErrors();
             }, 300);
         }
@@ -707,25 +725,9 @@
         });
 
         // Funciones de validación
-        function validateEmail(email) {
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            return emailRegex.test(email);
-        }
-
         function validatePhone(phone) {
-            // Permite números con espacios, guiones, paréntesis y el signo +
             const phoneRegex = /^[\+]?[\d\s\-\(\)]{10,}$/;
             return phoneRegex.test(phone.replace(/\s/g, ''));
-        }
-
-        function validateURL(url) {
-            if (!url) return true; // Es opcional
-            try {
-                new URL(url);
-                return true;
-            } catch {
-                return false;
-            }
         }
 
         function showError(fieldId, message) {
@@ -750,7 +752,7 @@
             fields.forEach(hideError);
         }
 
-        // Validación en tiempo real (al salir del campo)
+        // Validación en tiempo real
         document.getElementById('fullName').addEventListener('blur', function() {
             if (this.value.trim()) {
                 hideError('fullName');
@@ -779,10 +781,8 @@
         form.addEventListener('submit', function(e) {
             e.preventDefault();
             
-            // Limpiar errores previos
             clearAllErrors();
             
-            // Obtener valores del formulario
             const formData = {
                 fullName: document.getElementById('fullName').value.trim(),
                 businessName: document.getElementById('businessName').value.trim(),
@@ -790,22 +790,18 @@
                 message: document.getElementById('message').value.trim()
             };
             
-            // Validaciones
             let hasErrors = false;
             
-            // Validar nombre completo
             if (!formData.fullName) {
                 showError('fullName', 'Por favor ingresa tu nombre completo');
                 hasErrors = true;
             }
             
-            // Validar nombre del negocio
             if (!formData.businessName) {
                 showError('businessName', 'Por favor ingresa el nombre de tu negocio');
                 hasErrors = true;
             }
             
-            // Validar teléfono
             if (!formData.phone) {
                 showError('phone', 'Por favor ingresa tu número de teléfono');
                 hasErrors = true;
@@ -814,29 +810,23 @@
                 hasErrors = true;
             }
             
-            // Validar mensaje
             if (!formData.message) {
-                showError('message', 'Por favor describe qué tipo de análisis necesitas');
+                showError('message', 'Por favor describe qué tipo de solución necesitas');
                 hasErrors = true;
             }
             
-            // Si no hay errores, enviar a Google Sheets
             if (!hasErrors) {
-                // Deshabilitar botón durante el envío
                 const submitButton = document.querySelector('.submit-button');
                 const originalText = submitButton.textContent;
                 submitButton.disabled = true;
                 submitButton.textContent = '📤 Enviando...';
                 
-                // Enviar a Google Sheets
                 const googleFormData = new FormData();
-                googleFormData.append('entry.2005620554', formData.fullName);       // Nombre completo
-                googleFormData.append('entry.1045781291', formData.businessName);   // Nombre del negocio
-                googleFormData.append('entry.1065046570', formData.phone);          // Teléfono
-                googleFormData.append('entry.1166974658', formData.message);        // Mensaje
-
+                googleFormData.append('entry.2005620554', formData.fullName);
+                googleFormData.append('entry.1045781291', formData.businessName);
+                googleFormData.append('entry.1065046570', formData.phone);
+                googleFormData.append('entry.1166974658', formData.message);
                 
-                // URL del Google Form (necesitas obtener esta URL de tu Google Form)
                 const googleFormURL = 'https://docs.google.com/forms/d/e/1FAIpQLSe4iu5pPDvKN47_YiZunyLPoSLZD4hW0w1bEskgKYVGmQSHxQ/formResponse';
                 
                 fetch(googleFormURL, {
@@ -844,39 +834,23 @@
                     mode: 'no-cors',
                     body: googleFormData
                 }).then(() => {
-                    // Mostrar mensaje de éxito
-                    alert('¡Gracias! Tu solicitud ha sido enviada. Te contactaremos pronto para agendar una asesoría gratuita.');
-                    
-                    // Limpiar formulario
+                    alert('¡Gracias! Tu solicitud ha sido enviada. Te contactaremos pronto para agendar una consultoría.');
                     form.reset();
-                    
-                    // Restaurar botón
                     submitButton.disabled = false;
                     submitButton.textContent = originalText;
-                    
-                    // Cerrar modal
                     closeModal();
                 }).catch(error => {
                     console.error('Error:', error);
-                    // Aún así mostrar éxito porque no-cors no permite ver la respuesta real
-                    alert('¡Gracias! Tu solicitud ha sido enviada. Te contactaremos pronto para agendar una asesoría gratuita.');
-                    
-                    // Limpiar formulario
+                    alert('¡Gracias! Tu solicitud ha sido enviada. Te contactaremos pronto para agendar una consultoría.');
                     form.reset();
-                    
-                    // Restaurar botón
                     submitButton.disabled = false;
                     submitButton.textContent = originalText;
-                    
-                    // Cerrar modal
                     closeModal();
                 });
             }
         });
 
-        // Efectos adicionales para mejorar la experiencia del usuario
-        
-        // Smooth scroll para anclas internas (si las agregas en el futuro)
+        // Smooth scroll
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -890,7 +864,7 @@
             });
         });
 
-        // Animación de entrada para las tarjetas de servicio
+        // Animación de entrada para las tarjetas
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
@@ -905,13 +879,11 @@
             });
         }, observerOptions);
 
-        // Aplicar el observer a las tarjetas de servicio
         document.addEventListener('DOMContentLoaded', function() {
             const serviceCards = document.querySelectorAll('.service-card');
             serviceCards.forEach(card => {
                 card.style.opacity = '0';
                 card.style.transform = 'translateY(30px)';
-                                card.style.transform = 'translateY(30px)';
             });
         });
     </script>
